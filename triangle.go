@@ -15,8 +15,7 @@ func (t Triangle) CalcPerimeter() float64 {
 }
 
 func (t Triangle) CalcArea() float64 {
-	nSide := t.Side * math.Sin(math.Pi/3)
-	return (nSide * t.Side) / 2
+	return (math.Pow(t.Side, 2) * math.Sin(math.Pi/3)) / 2
 }
 
 func (t Triangle) GetType() string {
