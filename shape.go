@@ -5,6 +5,4 @@ type Shape interface {
 	CalcPerimeter() float64
 	// CalcArea returns calculation result of area
 	CalcArea() float64
-
-	GetType() string
 }

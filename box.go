@@ -105,7 +105,7 @@ func (b *box) RemoveAllCircles() error {
 	found := false
 
 	for _, shape := range b.shapes {
-		if shape.GetType() == "circle" {
+		if _, ok := shape.(*Circle); ok {
 			found = true
 			continue
 		}
